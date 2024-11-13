@@ -77,6 +77,8 @@ Para gerenciar e monitorar recursos, garantindo conformidade e segurança.
 Essas categorias ajudam a navegar pelo catálogo extenso de serviços do Azure. Para quem desenvolve softwares multiplataforma, essa organização por categorias simplifica o processo de selecionar as ferramentas e serviços mais adequados para cada etapa do desenvolvimento e implementação.
 
 
+
+
 # Resumo do Aprendizado: Benefícios da Nuvem
 
 Neste laboratório, explorei os **benefícios da computação em nuvem** e entendi por que as soluções na nuvem têm transformado o desenvolvimento e a implementação de software. Como estudante Full Stack, esses conceitos são fundamentais para criar e escalar aplicações modernas.
@@ -127,4 +129,79 @@ As plataformas de nuvem oferecem uma ampla gama de serviços integrados, como ba
 ---
 
 Esse laboratório me mostrou que a nuvem não é apenas uma questão de hospedagem, mas uma forma de tornar o desenvolvimento mais ágil, seguro e acessível. Para um desenvolvedor Full Stack, entender esses benefícios, incluindo as zonas de disponibilidade, é essencial para criar soluções modernas e escaláveis na nuvem.
+
+
+
+# Resumo do Aprendizado: Configurando uma Instância de Banco de Dados no Azure
+
+Neste laboratório, explorei como configurar uma instância de banco de dados na plataforma Azure, entendendo as diferenças entre os **tipos de serviços de nuvem** e como isso impacta o gerenciamento e o desempenho do banco de dados. Esses conceitos são essenciais para quem precisa de soluções escaláveis para aplicativos de alta performance.
+
+## Tipos de Serviços de Nuvem
+
+Antes de configurar a instância de banco de dados, aprendi sobre os três tipos principais de serviços de nuvem no Azure:
+
+1. **Infraestrutura como Serviço (IaaS)**: O Azure fornece a infraestrutura (máquinas virtuais, redes, e armazenamento), e eu sou responsável por gerenciar o sistema operacional e as configurações da aplicação. Esse tipo de serviço é muito flexível e ideal para personalização, mas exige mais manutenção.
+
+2. **Plataforma como Serviço (PaaS)**: O Azure gerencia a infraestrutura e o sistema operacional, enquanto eu foco apenas na aplicação e no banco de dados. É ideal para bancos de dados, pois inclui recursos de monitoramento e backup, sem que eu precise lidar com o sistema subjacente.
+
+3. **Software como Serviço (SaaS)**: Neste modelo, a aplicação completa é gerida pelo Azure, sem necessidade de configuração de infraestrutura ou software. O exemplo mais comum seria o uso de aplicativos SaaS prontos, como Office 365.
+
+### Banco de Dados no Azure como PaaS
+
+Para bancos de dados, o **PaaS** é um modelo muito eficiente. Ele permite que eu configure, dimensione e gerencie o banco de dados sem me preocupar com a manutenção do sistema operacional ou da infraestrutura. No laboratório, usei o serviço **Azure SQL Database**, que é um banco de dados relacional totalmente gerenciado.
+
+## Passo a Passo para Configurar uma Instância de Banco de Dados
+
+Aqui estão os principais passos que segui para configurar uma instância de banco de dados:
+
+### 1. Acessando o Portal e Selecionando o Banco de Dados
+A configuração começou no [Portal do Azure](https://portal.azure.com/). Acessei **Banco de Dados SQL** e cliquei em “+ Criar” para configurar uma nova instância.
+
+### 2. Configurando o Banco de Dados
+Na tela de criação, defini alguns parâmetros importantes:
+
+- **Assinatura e Grupo de Recursos**: Escolhi uma assinatura e grupo de recursos já existentes, onde todos os elementos do projeto ficam organizados.
+- **Nome do Banco de Dados**: Nomeei o banco de dados para que ele ficasse facilmente identificável no projeto.
+- **Servidor SQL**: Criei ou selecionei um servidor SQL onde o banco de dados será hospedado, especificando o nome, localização e configurações de segurança.
+
+### 3. Configurando Performance e Escalabilidade
+
+O Azure permite que eu ajuste o desempenho e a escalabilidade do banco de dados. Escolhi o plano de serviço com a capacidade de CPU e memória adequadas para o projeto:
+
+- **Modelo de Computação**: Escolhi entre os modelos provisionado e sem servidor, dependendo da frequência de uso do banco de dados. O modelo sem servidor é mais econômico para bancos de dados que não precisam ficar ativos o tempo todo.
+- **Camadas de Desempenho**: O Azure SQL oferece várias camadas de desempenho, desde opções básicas para testes até camadas premium para alta performance.
+
+### 4. Configurações de Rede e Segurança
+
+Para proteger o acesso ao banco de dados:
+
+- **Regras de Firewall**: Configurei regras de firewall para limitar o acesso apenas a IPs autorizados.
+- **Autenticação**: Escolhi um método de autenticação seguro (usuário e senha) e defini permissões para garantir que somente usuários autorizados possam acessar e modificar os dados.
+
+### 5. Backup e Recuperação
+
+Uma grande vantagem do Azure SQL Database é o recurso de **backup automático**, que permite recuperar dados caso algo dê errado. Além disso, o Azure oferece backups geo-redundantes para aumentar a segurança dos dados.
+
+### 6. Conectando ao Banco de Dados
+
+Com o banco de dados configurado, utilizei as credenciais definidas para conectar o aplicativo à instância SQL. No laboratório, testei a conexão usando o **SQL Server Management Studio (SSMS)** e validei que as permissões e a conectividade estavam funcionando conforme esperado.
+
+---
+
+## Benefícios da Configuração de Banco de Dados na Nuvem
+
+Esse laboratório me mostrou como o Azure simplifica o processo de configurar e gerenciar um banco de dados, especialmente com o uso de PaaS. Com o Azure SQL Database, pude focar no desenvolvimento e na otimização do meu aplicativo, deixando para o Azure a responsabilidade pela infraestrutura e segurança.
+
+Os principais benefícios dessa abordagem são:
+
+- **Economia de Tempo e Custo**: Menos tempo gasto em configurações complexas e manutenção da infraestrutura.
+- **Alta Disponibilidade**: O Azure oferece opções de replicação e backup para garantir que o banco de dados esteja sempre disponível.
+- **Segurança Integrada**: Configurações de firewall e autenticação garantem que apenas usuários autorizados acessem os dados.
+
+Para um desenvolvedor Full Stack, entender como configurar uma instância de banco de dados no Azure é fundamental para criar aplicativos escaláveis e seguros que atendem às demandas dos usuários.
+
+--- 
+
+Esse resumo destaca os principais pontos da configuração de banco de dados e os benefícios dos tipos de serviços de nuvem.
+
 
