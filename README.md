@@ -1,6 +1,6 @@
 # Resumo do Meu Aprendizado: Introdução aos Conceitos Básicos do Microsoft Azure (AZ-900)
 
-Durante esse laboratório na DIO, comecei a entender melhor o universo da computação em nuvem, explorando conceitos que são cada vez mais importantes para nós, desenvolvedores, especialmente para quem, como eu, está se aprofundando no desenvolvimento de softwares multiplataforma. Abaixo, vou resumir os principais pontos do que aprendi.
+Durante esse laboratório na DIO, comecei a entender melhor o universo da computação em nuvem, explorando conceitos que são cada vez mais importantes para nós, desenvolvedores, especialmente para quem, como eu, está se aprofundando no desenvolvimento de softwares multiplataformas. Abaixo, vou resumir os principais pontos do que aprendi.
 
 ## 1. Computação em Nuvem: O Básico
 Aprendi que a **computação em nuvem** é basicamente a ideia de acessar e gerenciar recursos de TI pela internet. Com isso, não é preciso ter uma super infraestrutura local, o que torna tudo mais flexível e acessível, e ainda permite que os projetos cresçam de forma escalável, pagando apenas pelo que for usado.
